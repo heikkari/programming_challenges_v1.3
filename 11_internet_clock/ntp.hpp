@@ -31,9 +31,9 @@ struct timestamp
 
 struct ntp_message
 {
-    unsigned int mode;
-    unsigned int version;
-    unsigned int leap;
+    unsigned int mode: 3;
+    unsigned int version: 2;
+    unsigned int leap: 2;
 
     // ---
     unsigned char stratum;

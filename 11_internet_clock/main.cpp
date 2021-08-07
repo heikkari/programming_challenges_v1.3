@@ -7,7 +7,7 @@
 #include <arpa/inet.h>
 #include <ctime>
 
-int other(int argc, char const *argv[])
+int main(int argc, char const *argv[])
 {
     if(argc != 3)
     {
