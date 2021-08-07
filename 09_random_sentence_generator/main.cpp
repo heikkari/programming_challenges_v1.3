@@ -47,7 +47,7 @@ int main()
     std::vector<std::string> dict = dictionary();
     std::string output;
 
-    for(int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         int random_n = random_number(0, dict.size());
         output += dict[random_n] + " ";

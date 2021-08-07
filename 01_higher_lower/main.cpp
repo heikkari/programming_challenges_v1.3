@@ -12,7 +12,7 @@ int random_number(int x, int y)
 
 int main()
 {
-    if((bool)random_number(0, 1))
+    if(random_number(0, 1))
         printf("Heads");
     else
         printf("Tails");

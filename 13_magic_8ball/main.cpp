@@ -8,7 +8,7 @@ int condense(int n)
     int remainder = 0;
     int result = 0;
 
-    while(copy_n != 0)
+    while (copy_n != 0)
     {
         remainder = copy_n % 10;
         result += remainder;
@@ -22,16 +22,17 @@ int main()
 {
     std::string input;
     std::cout << "What's your question? ";
-    std::cin >> input;
+    std::getline(std::cin, input);
+
     int magic_number = 1;
 
-    if(input.length() > 9)
+    if (input.length() > 9)
         input = input.substr(0, 4);
 
-    for(const auto& c: input)
+    for (const auto &c : input)
         magic_number *= (c * 0.333);
 
-    while(magic_number > 9)
+    while (magic_number > 9)
         magic_number = condense(magic_number);
 
     printf("Result: ");

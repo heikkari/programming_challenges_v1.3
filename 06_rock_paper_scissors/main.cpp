@@ -24,9 +24,12 @@ int main()
         player_choice == 1 && enemy_choice == 0 || // paper > rock
         player_choice == 2 && enemy_choice == 1;   // scissors > paper
 
-    if(did_player_win) printf("You won!");
-    else if(player_choice == enemy_choice) printf("You tied.");
-    else printf("You lost.");
+    if (did_player_win)
+        printf("You won!");
+    else if (player_choice == enemy_choice)
+        printf("You tied.");
+    else
+        printf("You lost.");
 
     printf("\n");
 }

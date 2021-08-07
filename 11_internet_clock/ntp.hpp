@@ -16,15 +16,15 @@ struct timestamp
     int reverse_endian_int(int n)
     {
         return
-            ((n)&0xff000000) >> 24 |
-            ((n)&0x00ff0000) >> 8  |
-            ((n)&0x0000ff00) << 8  |
-            ((n)&0x000000ff) << 24;
+            (n & 0xff000000) >> 24 |
+            (n & 0x00ff0000) >> 8  |
+            (n & 0x0000ff00) << 8  |
+            (n & 0x000000ff) << 24;
     }
 
     void reverse_endian()
     {
-        this->seconds = this->reverse_endian_int(this->seconds);
+        this->seconds  = this->reverse_endian_int(this->seconds);
         this->fraction = this->reverse_endian_int(this->fraction);
     }
 };

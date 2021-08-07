@@ -24,7 +24,7 @@ int other(int argc, char const *argv[])
     std::memset(&address, 0, sizeof(address));
 
     // resolve address
-    address.sin_family=AF_INET;
+    address.sin_family = AF_INET;
     address.sin_addr.s_addr = inet_addr(host);
     address.sin_port = htons(port);
 

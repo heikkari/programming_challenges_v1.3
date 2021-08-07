@@ -8,12 +8,12 @@ int main()
     std::cout << "x=";
     std::cin >> x;
 
-    while(x != 1)
+    while (x != 1)
     {
         output += std::to_string(x);
         output += ", ";
 
-        if(x % 2 == 0)
+        if (x % 2 == 0)
             x /= 2;
         else
             x = 3 * x + 1;
